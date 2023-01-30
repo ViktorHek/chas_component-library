@@ -18,21 +18,22 @@ det med att visa hur den fungerar med en knapp som öppnar modalen. Obligatorisk
 för varje komponent, men ni får gärna skapa flera props. Ta inspiration från länkarna
 på varje komponent.
 
-1. [Buttons](https://flowbite-react.com/buttons)
+1. [Buttons](https://flowbite-react.com/buttons)  
    Obligatoriska Props: size, color, disabled
 
-1. [Alerts](https://flowbite-react.com/alerts)
+1. [Alerts](https://flowbite-react.com/alerts)  
    Obligatoriska Props: color, icon, onDismiss
 
-1. [Badges](https://flowbite-react.com/badges)
+1. [Badges](https://flowbite-react.com/badges)  
    Obligatoriska Props: color, size, icon
 
-1. [Card](https://flowbite-react.com/card)
+1. [Card](https://flowbite-react.com/card)  
    Obligatoriska Props: href, imgAlt, imgSrc
 
-1. [Modal](https://flowbite-react.com/modal)
-   Obligatoriska Props: show, onClose, size
-   Obligatoriska komponenter: Modal, Modal.Header, Modal.Body, Modal.Footer
+1. [Modal](https://flowbite-react.com/modal)  
+   Obligatoriska Props: show, onClose, size  
+   Obligatoriska komponenter: Modal, Modal.Header, Modal.Body, Modal.Footer  
+   
 
 ### :runner: Extrauppgifter
 
