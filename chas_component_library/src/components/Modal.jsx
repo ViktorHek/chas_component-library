@@ -29,15 +29,17 @@ function Modal({ show, onClose, size }) {
     <div
       className="Modal"
       style={{
-        width: size === "big" ? "100%" : "300px",
+        width: size === "big" ? "90%" : "300px",
         display: show ? "flex" : "none",
       }}>
-      <div className="modal-header">
+      <div className="modal-header center">
         <h1>Modal</h1>
-        <button onClick={onClose}>X</button>
+        <span onClick={onClose}>X</span>
       </div>
-      <div className="modal-body">{displayCards && displayCards}</div>
-      <div className="modal-footer">footer</div>
+      <div className="center" style={{ flexDirection: "row", width: "100%" }}>
+        {displayCards && displayCards}
+      </div>
+      <div className="modal-footer center">nice greatings for everybody</div>
     </div>
   );
 }

@@ -1,30 +1,31 @@
-import Alert from "./components/Alerts";
-import Modal from "./components/Modal";
 import { useState } from "react";
+import Modal from "./components/Modal";
 import Button from "./components/Button";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
   function handleClose() {
-    setOpenModal(false)
-  }
-  function handleDismiss() {
-    console.log("dissmissing");
+    setOpenModal(false);
   }
   function handleClick() {
     setOpenModal(true);
   }
-
   return (
-    <div className="App">
-      <Alert color={"green"} icon={"success"} onDismiss={handleDismiss} />
-      <Button
-        size={"big"}
-        color={"blue"}
-        disabled={false}
-        handleClick={handleClick}
-      />
-      {openModal && <Modal show={openModal} onClose={handleClose} size={"big"} />}
+    <div className="App center">
+      <h1>images of greeatings</h1>
+
+      <div style={{ margin: "20px 0px" }}>
+        <Button
+          size={"big"}
+          color={"blue"}
+          disabled={false}
+          handleClick={handleClick}
+        />
+      </div>
+
+      {openModal && (
+        <Modal show={openModal} onClose={handleClose} size={"big"} />
+      )}
     </div>
   );
 }

@@ -1,30 +1,10 @@
-import { useState } from "react";
-function Alert(color, icon, onDismiss) {
-  const [showAlert, setShowAlert] = useState(false);
-
-  const alertElementLike = document.getElementById("alert_button_like");
-  const alertElementLove = document.getElementById("alert_button_love");
-  if (alertElementLike) {
-console.log('tjofff')
-    alertElementLike.addEventListener("click", handleClickLike);
-  }
-
-  if (alertElementLove) {
-    alertElementLove.addEventListener("click", handleClickLove);
-  }
-
-  function handleClickLike() {
-    console.log("hej");
-    setTimeout(console.log("då"), 2000);
-  }
-  function handleClickLove() {
-    console.log("hej");
-    setTimeout(console.log("då"), 2000);
-  }
-
+function Alert({ color, icon, onDismiss }) {
   return (
-    <div className="Alert">
-      <span></span>
+    <div className="Alert" style={{backgrondColor: color}}>
+      <span>You have {icon}d this image</span>
+      <span onClick={() => onDismiss()} style={{ cursor: "pointer" }}>
+        x
+      </span>
     </div>
   );
 }
