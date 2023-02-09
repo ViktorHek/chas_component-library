@@ -71,6 +71,7 @@ img {
   background-color: #b65830;
   color: #c7c7da;
   border: 1px solid #c7c7da;
+  cursor: pointer;
 }
 
 .modal-footer {
@@ -110,7 +111,6 @@ img {
   top: 2px;
   left: 25%;
   z-index: 999;
-  background-color: #b75830;
   width: 50%;
   height: 60px;
   display: flex;
@@ -119,11 +119,10 @@ img {
   padding: 40px 20px;
   border-radius: 20px;
   border: 2px solid grey;
-  box-shadow: 5px 15px #c7c7da;
 }
 
 .Alert > span {
   font-size: xx-large;
   font-weight: 900;
-  color: #c7c7da;
+  color: #424194;
 }

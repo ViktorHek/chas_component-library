@@ -36,7 +36,12 @@ function Modal({ show, onClose, size }) {
         <h1>Modal</h1>
         <span onClick={onClose}>X</span>
       </div>
-      <div className="center" style={{ flexDirection: "row", width: "100%" }}>
+      <div
+        className="center"
+        style={{
+          flexDirection: size === "big" ? "row" : "column",
+          width: "100%",
+        }}>
         {displayCards && displayCards}
       </div>
       <div className="modal-footer center">nice greatings for everybody</div>
